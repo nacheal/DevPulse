@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-turbo@latest:*)",
+      "Bash(TURBO_FLAGS=--package-manager=npm npx create-turbo@latest:*)",
+      "Bash(tree:*)",
+      "Bash(lsof:*)",
+      "Bash(test:*)",
+      "Bash(curl:*)",
+      "Bash(timeout:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx turbo:*)",
+      "Bash(cd:*)"
+    ]
+  }
+}
