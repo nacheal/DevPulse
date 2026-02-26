@@ -16,7 +16,7 @@ function App() {
       <header className="border-b border-[var(--border)] backdrop-blur-sm bg-[var(--background)]/80 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-[var(--gradient-primary)] flex items-center justify-center shadow-[var(--shadow-glow)]">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--primary)] to-[var(--primary-hover)] flex items-center justify-center">
               <svg
                 className="w-6 h-6 text-white"
                 fill="none"
@@ -31,7 +31,7 @@ function App() {
                 />
               </svg>
             </div>
-            <h1 className="text-2xl font-bold bg-[var(--gradient-primary)] bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-[var(--primary)] to-purple-400 bg-clip-text text-transparent">
               DevPulse
             </h1>
           </div>
@@ -64,7 +64,7 @@ function App() {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Build faster with{' '}
-            <span className="bg-[var(--gradient-primary)] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[var(--primary)] to-purple-400 bg-clip-text text-transparent">
               Turborepo
             </span>
           </h2>
@@ -210,7 +210,7 @@ function App() {
       {/* CTA Section */}
       <section className="px-6 py-20">
         <div className="max-w-4xl mx-auto">
-          <div className="relative overflow-hidden rounded-3xl bg-[var(--gradient-primary)] p-12 text-center shadow-[var(--shadow-lg)]">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--primary)] to-purple-600 p-12 text-center">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse" />
             <div className="relative">
               <h3 className="text-3xl font-bold mb-4">Ready to start building?</h3>
