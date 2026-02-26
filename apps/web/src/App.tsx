@@ -1,7 +1,15 @@
+import { useState } from 'react'
 import { Button } from 'ui'
 import { formatDate, formatBytes } from 'utils'
+import Docs from './Docs'
 
 function App() {
+  const [view, setView] = useState<'home' | 'docs'>('home')
+
+  if (view === 'docs') {
+    return <Docs onBack={() => setView('home')} />
+  }
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -28,14 +36,16 @@ function App() {
             </h1>
           </div>
           <nav className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors text-sm font-medium"
+            <button
+              onClick={() => setView('docs')}
+              className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors text-sm font-medium cursor-pointer"
             >
               Documentation
-            </a>
+            </button>
             <a
-              href="#"
+              href="https://github.com/nacheal/DevPulse"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors text-sm font-medium"
             >
               GitHub
@@ -213,7 +223,8 @@ function App() {
                 </Button>
                 <Button
                   variant="secondary"
-                  className="bg-white/10 text-white border-white/20 hover:bg-white/20"
+                  onClick={() => setView('docs')}
+                  className="bg-white/10 text-white border-white/20 hover:bg-white/20 cursor-pointer"
                 >
                   Read Docs
                 </Button>
