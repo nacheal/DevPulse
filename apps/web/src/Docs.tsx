@@ -11,7 +11,7 @@ function Docs({ onBack }: DocsProps) {
       <header className="border-b border-[var(--border)] backdrop-blur-sm bg-[var(--background)]/80 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--primary)] to-[var(--primary-hover)] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg bg-[var(--gradient-primary)] flex items-center justify-center shadow-[var(--shadow-glow)]">
               <svg
                 className="w-6 h-6 text-white"
                 fill="none"
@@ -26,7 +26,7 @@ function Docs({ onBack }: DocsProps) {
                 />
               </svg>
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[var(--primary)] to-purple-400 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold bg-[var(--gradient-primary)] bg-clip-text text-transparent">
               DevPulse
             </h1>
           </div>
@@ -358,7 +358,7 @@ function Docs({ onBack }: DocsProps) {
 
           {/* CTA */}
           <section className="text-center py-12">
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-[var(--primary)] to-purple-600">
+            <div className="p-8 rounded-3xl bg-[var(--gradient-primary)] shadow-[var(--shadow-lg)]">
               <h3 className="text-2xl font-bold mb-4">Ready to build?</h3>
               <p className="text-white/80 mb-6 max-w-lg mx-auto">
                 Start building your next project with DevPulse today.
